@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Years of Forever ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 182, 193, 0.3) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(180deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .photo-frame {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 5px;
+            position: relative;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .photo-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .counter-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px 20px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            transform: translateY(0);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .counter-box:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(245, 87, 108, 0.4);
+        }
+
+        .counter-number {
+            font-size: 2.8em;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .counter-label {
+            font-size: 1em;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .story-card {
+            background: linear-gradient(135deg, #ffeef8 0%, #f3e7ff 100%);
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid #667eea;
+            position: relative;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(240, 147, 251, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .story-card:hover::before {
+            opacity: 1;
+        }
+
+        .story-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            height: auto;
+        }
+
+        .story-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .story-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .story-text {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05em;
+            opacity: 0;
+            max-height: 0;
+            transition: all 0.4s ease;
+        }
+
+        .story-card:hover .story-text {
+            opacity: 1;
+            max-height: 500px;
+        }
+
+        .story-hint {
+            color: #f5576c;
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .poetry-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .poetry-card {
+            background: linear-gradient(135deg, #fff5f7 0%, #f0e7ff 100%);
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid transparent;
+        }
+
+        .poetry-card:hover {
+            border-color: #f093fb;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
+        }
+
+        .poetry-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .poetry-card:hover .poetry-icon {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .poetry-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .poetry-urdu {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-size: 0em;
+            line-height: 2;
+            color: #764ba2;
+            direction: rtl;
+            opacity: 0;
+            max-height: 0;
+            transition: all 0.4s ease;
+            margin-top: 15px;
+        }
+
+        .poetry-card.revealed .poetry-urdu {
+            font-size: 1.6em;
+            opacity: 1;
+            max-height: 300px;
+        }
+
+        .poetry-card.revealed .poetry-icon {
+            display: none;
+        }
+
+        .poetry-hint {
+            font-size: 0.85em;
+            color: #f5576c;
+            font-style: italic;
+        }
+
+        .message-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .message-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .message-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .message-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .message-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .message-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .message-card:hover .message-icon {
+            transform: scale(1.2);
+        }
+
+        .message-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .message-hint {
+            color: #999;
+            font-size: 0.9em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .interactive-heart {
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .interactive-heart:hover {
+            transform: scale(1.2);
+        }
+
+        .heart-svg {
+            width: 100%;
+            height: 100%;
+            fill: #e74c3c;
+            filter: drop-shadow(0 10px 30px rgba(231, 76, 60, 0.5));
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 35px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(-2px);
+        }
+
+        .floating-hearts {
+            position: fixed;
+            pointer-events: none;
+            font-size: 30px;
+            z-index: 1000;
+        }
+
+        @keyframes float-up {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            text-align: center;
+            animation: slideIn 0.5s ease-out;
+            position: relative;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: scale(0.5) translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2.5em;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s ease;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .close-modal:hover {
+            color: #e74c3c;
+        }
+
+        .final-message {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+        .final-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            margin-bottom: 25px;
+        }
+
+        .final-text {
+            font-size: 1.2em;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .final-urdu {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-size: 2em;
+            line-height: 2.5;
+            direction: rtl;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .counter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .counter-number {
+                font-size: 2.2em;
+            }
+
+            .story-grid, .poetry-cards, .message-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                padding: 30px 25px;
+                margin: 20px;
+            }
+        }
+
+        .click-hint {
+            text-align: center;
+            color: #f5576c;
+            font-size: 1.1em;
+            margin-top: 15px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>4 Years of Forever</h1>
+                <p class="subtitle">Our journey through trials, triumphs, and unconditional love</p>
+                
+                <div class="photo-frame">
+                    <div class="photo-inner">👨‍👩‍👧</div>
+                </div>
+
+                <div class="counter-grid">
+                    <div class="counter-box" onclick="explodeHearts()">
+                        <span class="counter-number">4</span>
+                        <span class="counter-label">Years</span>
+                    </div>
+                    <div class="counter-box" onclick="explodeHearts()">
+                        <span class="counter-number" id="days">0</span>
+                        <span class="counter-label">Days Together</span>
+                    </div>
+                    <div class="counter-box" onclick="explodeHearts()">
+                        <span class="counter-number" id="hours">0</span>
+                        <span class="counter-label">Hours</span>
+                    </div>
+                    <div class="counter-box" onclick="explodeHearts()">
+                        <span class="counter-number">∞</span>
+                        <span class="counter-label">Love</span>
+                    </div>
+                </div>
+                <p class="click-hint">👆 Click the cards!</p>
+            </div>
+        </div>
+
+        <!-- Poetry Cards Section -->
+        <div class="section">
+            <h2 class="section-title">میرے دل کی آواز</h2>
+            <p class="click-hint">💝 Click each card to reveal the poetry</p>
+            
+            <div class="poetry-cards">
+                <div class="poetry-card" onclick="revealPoetry(this)">
+                    <span class="poetry-icon">💕</span>
+                    <div class="poetry-title">My Life's Chapter</div>
+                    <div class="poetry-urdu">
+                        تم میری زندگی کا سب سے حسین باب ہو
+                        <br>
+                        میری خوشیوں کا، میری دعاؤں کا جواب ہو
+                    </div>
+                </div>
+
+                <div class="poetry-card" onclick="revealPoetry(this)">
+                    <span class="poetry-icon">🌟</span>
+                    <div class="poetry-title">Four Years Strong</div>
+                    <div class="poetry-urdu">
+                        چار سال گزرے ساتھ تمہارے
+                        <br>
+                        ہر پل میں محبت کے ہزار نظارے
+                        <br>
+                        طوفان آئے، مشکلیں آئیں بے شمار
+                        <br>
+                        مگر اللہ کے کرم سے ہم رہے استوار
+                    </div>
+                </div>
+
+                <div class="poetry-card" onclick="revealPoetry(this)">
+                    <span class="poetry-icon">👑</span>
+                    <div class="poetry-title">My Pride</div>
+                    <div class="poetry-urdu">
+                        تم میری عزت ہو، میرا فخر ہو
+                        <br>
+                        میرے ہر خواب میں، تم ہی نظر آتے ہو
+                    </div>
+                </div>
+
+                <div class="poetry-card" onclick="revealPoetry(this)">
+                    <span class="poetry-icon">🤲</span>
+                    <div class="poetry-title">My Strength</div>
+                    <div class="poetry-urdu">
+                        تم نے سنبھالا مجھے ہر مشکل میں
+                        <br>
+                        دیا ساتھ میرا ہر منزل میں
+                    </div>
+                </div>
+
+                <div class="poetry-card" onclick="revealPoetry(this)">
+                    <span class="poetry-icon">💝</span>
+                    <div class="poetry-title">My Respect</div>
+                    <div class="poetry-urdu">
+                        احترام ہے تمہارا دل میں میرے
+                        <br>
+                        تم ہو میری دنیا کے بادشاہ یہاں پر
+                    </div>
+                </div>
+
+                <div class="poetry-card" onclick="revealPoetry(this)">
+                    <span class="poetry-icon">👶</span>
+                    <div class="poetry-title">Our Blessing</div>
+                    <div class="poetry-urdu">
+                        بیٹی ہماری ہنستی ہے تو لگتا ہے
+                        <br>
+                        جیسے جنت کا ایک ٹکڑا دل میں بس گیا
+                        <br>
+                        وہ تم سے ملتی ہے، مجھ سے ملتی ہے
+                        <br>
+                        ہماری محبت کی نشانی ہے یہ بچی
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Story Section -->
+        <div class="section">
+            <h2 class="section-title">Our Unbreakable Bond</h2>
+            <p class="click-hint">✨ Hover over each card to read our story</p>
+            
+            <div class="story-grid">
+                <div class="story-card">
+                    <span class="story-icon">💪</span>
+                    <div class="story-title">Against All Odds</div>
+                    <div class="story-text">
+                        They said we wouldn't make it. They tried to pull us apart, to make us doubt each other. 
+                        But Alhamdulillah, their efforts only made us stronger. Every challenge became another testimony 
+                        to the strength of our bond. We stood together when the world stood against us.
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <span class="story-icon">🌟</span>
+                    <div class="story-title">Allah's Will Prevailed</div>
+                    <div class="story-text">
+                        Through every storm, every whisper meant to divide us - Allah's plan remained supreme. 
+                        He protected our love when people tried to destroy it. Our marriage isn't just our choice; 
+                        it's Allah's blessing, and no force can undo what He has ordained.
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <span class="story-icon">👶💕</span>
+                    <div class="story-title">Our Beautiful Blessing</div>
+                    <div class="story-text">
+                        Then Allah blessed us with our daughter - almost 2 years of pure joy, a perfect blend of both of us. 
+                        She is the living proof of our love, a beautiful reminder that what we have is real and blessed. 
+                        Her smile silences every doubt.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Messages -->
+        <div class="section">
+            <h2 class="section-title">Why You're My Everything</h2>
+            <p class="click-hint">💫 Click to discover each message</p>
+            
+            <div class="message-grid">
+                <div class="message-card" onclick="showMessage('respect')">
+                    <div class="message-icon">🙏</div>
+                    <div class="message-title">My Greatest Respect</div>
+                </div>
+
+                <div class="message-card" onclick="showMessage('strength')">
+                    <div class="message-icon">💪</div>
+                    <div class="message-title">My Strength</div>
+                </div>
+
+                <div class="message-card" onclick="showMessage('special')">
+                    <div class="message-icon">⭐</div>
+                    <div class="message-title">What Makes You Special</div>
+                </div>
+
+                <div class="message-card" onclick="showMessage('father')">
+                    <div class="message-icon">👨‍👧</div>
+                    <div class="message-title">Amazing Father</div>
+                </div>
+
+                <div class="message-card" onclick="showMessage('partner')">
+                    <div class="message-icon">💑</div>
+                    <div class="message-title">Perfect Partner</div>
+                </div>
+
+                <div class="message-card" onclick="showMessage('future')">
+                    <div class="message-icon">🌈</div>
+                    <div class="message-title">My Forever</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Heart -->
+        <div class="section" style="text-align: center;">
+            <h2 class="section-title">Special Surprises</h2>
+            
+            <div class="interactive-heart" onclick="explodeHearts()">
+                <svg class="heart-svg" viewBox="0 0 32 29.6">
+                    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                    c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                </svg>
+            </div>
+            <p class="click-hint">💖 Click the heart for magic!</p>
+
+            <div class="button-group">
+                <button class="btn" onclick="showLoveNote()">💌 My Love Letter</button>
+                <button class="btn" onclick="playMemories()">📸 Our Memories</button>
+                <button class="btn" onclick="makeAWish()">🌟 Make a Wish</button>
+            </div>
+        </div>
+
+        <!-- Final Message -->
+        <div class="section final-message">
+            <h2 class="final-title">Happy 4th Anniversary! 💕</h2>
+            <p class="final-text">
+                Thank you for being my rock, my partner, my best friend, and the most amazing father. 
+                Thank you for standing with me against every storm. 
+                Thank you for showing me what true love means.
+            </p>
+            <p class="final-text" style="font-weight: 600; font-size: 1.4em;">
+                Here's to forever, Insha'Allah! 🤲
+            </p>
+            <div class="final-urdu">
+                میں تم سے محبت کرتی ہوں
+                <br>
+                آج بھی، کل بھی، ہمیشہ ہمیشہ
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="messageModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle" style="color: #667eea; font-family: 'Playfair Display', serif; margin-bottom: 25px; font-size: 2em;"></h2>
+            <p id="modalText" style="font-size: 1.15em; line-height: 2; color: #555; text-align: left;"></p>
+        </div>
+    </div>
+
+    <script>
+        // Create stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = Math.random() * 3 + 'px';
+                star.style.height = star.style.width;
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Update counters
+        function updateCounters() {
+            const startDate = new Date('2021-02-19');
+            const now = new Date();
+            const diff = now - startDate;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            
+            document.getElementById('days').textContent = days.toLocaleString();
+            document.getElementById('hours').textContent = hours.toLocaleString();
+        }
+
+        // Explode hearts
+        function explodeHearts() {
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'floating-hearts';
+                    heart.innerHTML = ['❤️', '💕', '💖', '💗', '💝'][Math.floor(Math.random() * 5)];
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.top = window.innerHeight + 'px';
+                    heart.style.animation = `float-up ${4 + Math.random() * 3}s ease-out forwards`;
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => heart.remove(), 7000);
+                }, i * 50);
+            }
+        }
+
+        // Reveal poetry
+        function revealPoetry(card) {
+            card.classList.toggle('revealed');
+            explodeHearts();
+        }
+
+        // Show messages
+        const messages = {
+            respect: {
+                title: "Why I Respect You 🙏",
+                text: "You are the most honorable man I know. You stood by your principles, protected your family with dignity, and faced every criticism with grace. You never let others' opinions shake your commitment to us. You work hard, you care deeply, and you lead our family with wisdom and love. My respect for you grows every single day. You are not just my husband - you are my hero."
+            },
+            strength: {
+                title: "My Pillar of Strength 💪",
+                text: "When I felt weak, you were my strength. When I doubted, you believed. When people tried to break us, you held us together. You've been my anchor in every storm, my safe place in every chaos. Your strength isn't just physical - it's in your character, your faith, your unwavering commitment to our family. With you by my side, I can face anything."
+            },
+            special: {
+                title: "What Makes You Special ⭐",
+                text: "You're special because you're YOU. The way you smile at our daughter, the way you pray for us, the way you work tirelessly to give us a better life. You're special in how you respect me, how you value my opinion, how you make me feel cherished. You're special because in a world full of temporary, you chose forever. You're special because Allah chose you for me."
+            },
+            father: {
+                title: "The Best Father 👨‍👧",
+                text: "Watching you with our daughter fills my heart with so much love. The way she lights up when she sees you, the way you play with her, protect her, teach her - it's the most beautiful thing I've ever witnessed. You're not just raising a child; you're shaping a soul, building her confidence, showing her what a good man looks like. She's so blessed to have you as her Baba."
+            },
+            partner: {
+                title: "My Perfect Partner 💑",
+                text: "We've been through fire and came out golden. Every trial made us stronger, every challenge brought us closer. You're not just my husband - you're my best friend, my confidant, my partner in everything. We built this life together, one brick at a time, with faith and love as our foundation. I couldn't have asked for a better person to walk this journey with."
+            },
+            future: {
+                title: "Our Beautiful Future 🌈",
+                text: "I can't wait for all the years ahead. Watching our daughter grow, maybe adding to our family, growing old together, achieving our dreams side by side. Every future I imagine, you're in it. Every prayer I make, you're in it. Whatever comes, we'll face it together - just like we always have. Here's to the beautiful forever that awaits us, Insha'Allah!"
+            }
+        };
+
+        function showMessage(type) {
+            const modal = document.getElementById('messageModal');
+            const title = document.getElementById('modalTitle');
+            const text = document.getElementById('modalText');
+            
+            title.textContent = messages[type].title;
+            text.textContent = messages[type].text;
+            modal.style.display = 'flex';
+            explodeHearts();
+        }
+
+        function closeModal() {
+            document.getElementById('messageModal').style.display = 'none';
+        }
+
+        function showLoveNote() {
+            const modal = document.getElementById('messageModal');
+            const title = document.getElementById('modalTitle');
+            const text = document.getElementById('modalText');
+            
+            title.innerHTML = "💌 My Love Letter to You";
+            text.innerHTML = "My Dearest,<br><br>Four years ago, I made the best decision of my life. Through every obstacle, every attempt to tear us apart, every moment of doubt planted by others - we prevailed. Not because we were perfect, but because our love was real, our faith was strong, and Allah's plan was supreme.<br><br>You've given me everything - respect, love, security, and our beautiful daughter who is a reflection of the best parts of both of us. You've shown me that true love isn't just romance; it's standing together when the world stands against you.<br><br>I love you more today than yesterday, and I'll love you even more tomorrow. You are my dua answered, my blessing counted, my forever person.<br><br>Happy 4th Anniversary, my love. Here's to infinity more.<br><br>Forever Yours ❤️";
+            modal.style.display = 'flex';
+            explodeHearts();
+        }
+
+        function playMemories() {
+            const modal = document.getElementById('messageModal');
+            const title = document.getElementById('modalTitle');
+            const text = document.getElementById('modalText');
+            
+            title.innerHTML = "📸 Our Precious Memories";
+            text.innerHTML = "✨ Our first date - when I knew you were the one<br>💍 The day we said 'I do' - best day ever<br>🏠 Building our home together - brick by brick<br>😢 Crying together during hard times<br>😊 Laughing at silly things at midnight<br>👶 The day we became parents - pure magic<br>👨‍👩‍👧 Every family photo we've taken<br>🤲 Praying together for our future<br>💪 Overcoming every obstacle as a team<br><br>Every memory with you is my favorite memory. 💕";
+            modal.style.display = 'flex';
+            explodeHearts();
+        }
+
+        function makeAWish() {
+            const modal = document.getElementById('messageModal');
+            const title = document.getElementById('modalTitle');
+            const text = document.getElementById('modalText');
+            
+            title.innerHTML = "🌟 Our Wishes";
+            text.innerHTML = "Close your eyes and make a wish with me...<br><br>I wish for:<br>✨ Many more years together, Insha'Allah<br>✨ Health and happiness for our family<br>✨ To watch our daughter grow into an amazing person<br>✨ To grow old with you by my side<br>✨ To make you proud every day<br>✨ To keep falling in love with you over and over<br>✨ Allah's blessings on our family always<br><br>What did you wish for? Whatever it is, I pray Allah grants it to you. 🤲💕";
+            modal.style.display = 'flex';
+            explodeHearts();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('messageModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Initialize
+        window.addEventListener('load', () => {
+            createStars();
+            updateCounters();
+            setInterval(updateCounters, 60000);
+            setTimeout(explodeHearts, 2000);
+        });
+    </script>
+</body>
+</html>
